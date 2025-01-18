@@ -1,0 +1,844 @@
+Changelog 2.7.6 - 26/11/2013
+--------------------------------------
+- Secondary signal icon color overrides stock orange signal icon independently of SIM Slot (MTK Dual SIMs)
+- Adjusted app launcher layout for HDPI devices 
+- KitKat compatibility improvements:
+--- support for rotation lock tile
+--- support for location (stock GPS) tile
+--- option to choose QS tile style (JellyBean or KitKat)
+--- white colors for statusbar elements by default on KitKat when statusbar coloring is off
+--- fixed battery style options
+--- option to adjust bottom margin of RAM bar and clear all recents button 
+--- disabled phone and messaging tweaks (require rework)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Italian translations (thanks to pitone02)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated French translation (thanks to ch-vox)
+
+Changelog 2.7.5 - 24/11/2013
+--------------------------------------
+- Fixed misbehaviour of MENU key in some apps when double-tap is enabled
+- Improved compatibility with KitKat:
+--- disabled statusbar BG coloring
+--- disabled "Follow stock battery" option
+--- improved QuickSettings compatibility
+--- improved compatibility with stock battery
+
+Changelog 2.7.4 - 24/11/2013
+--------------------------------------
+- Initial support for KitKat [EXPERIMENTAL]
+- Added support for MT6582 (thanks to bgcngm)
+- Improved compatibility with Lenovo devices (thanks to bgcngm)
+- Improved support for MT6572 devices
+- Fixed Circle Battery not being vertically centered on some devices
+- Status bar icon coloring:
+--- improved icon layout and alignment
+--- added option for choosing status icon style (JellyBean or KitKat style)
+- Hardware Key Actions:
+--- improved handling of Back long-press
+--- improved handling of Menu double-tap
+--- added Back key double-tap support
+--- added Go Home and Go Back actions
+- New GravityBox icon (thanks to Jerber)
+- Updated French translation (thanks to ch-vox)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated German translations (thanks to samsonbear)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Japanese translations (thanks to WedyDQ10)
+
+Changelog 2.7.3 - 18/11/2013
+--------------------------------------
+- New battery style: KitKat battery with or without percentage and coloring support
+- Adjusted WiFi icon alignment
+- Reduced space between WiFi and mobile signal icons on MTK Dual SIMs
+- Fixed undesired replacement of icons coming from other packages than SystemUI (e.g. Play store icon replaced with BT icon)
+- Fixed statusbar icons not returning to stock after coloring is turned off
+- Updated French translation (thanks to ch-vox)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated Italian translations (thanks to pitone02)
+
+Changelog 2.7.2 - 15/11/2013
+--------------------------------------
+- Statusbar icon coloring improvements:
+--- added original signal icons from KitKat
+--- added "partially-connected" state signal icons created from original KK icons
+--- added xxhdpi high-res signal icons
+--- fixed bluetooth icon shape
+--- added support for coloring airplane mode icon
+--- added option for secondary signal icon color that overrides default MTK orange icon (MTK Dual SIMs only)
+--- added option for secondary data activity color (MTK Dual SIMs only)
+- Transparency management improvements
+--- improved compatibility with Xperia devices
+--- statusbar and navbar settings grouped and moved to the root of the settings hierarchy
+--- navbar transparency settings made independent of navbar tweaks
+--- option to set transparency manager mode:
+------ disabled - completely disables transparency related functions
+------ statusbar - applies transparency to statusbar only
+------ navigation bar - applies transparency to navbar only
+------ both - applies transparency to both
+--- improved navbar transparency handling (theoretically, may improve compatibility with Android 4.3)
+- Option for enabling/disabling navigation bar colors
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Italian translations (thanks to pitone02)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Ukrainian translations (thanks to egor4yk90)
+- Updated French translation (thanks to ch-vox)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.7.1 - 12/11/2013
+--------------------------------------
+- Fixed wallpaper scrolling when navbar transparency is on
+
+Changelog 2.7.0 - 12/11/2013
+--------------------------------------
+- Improved transparency management:
+--- Wallpaper now correctly scales behind navbar when it has transparency set. Works for majority of launchers, including Google Experience Launcher (KitKat)
+--- Support for animated transitions between transparent/non-transparent states
+- Statusbar Icon Colors:
+--- Improved icon quality (fixed blurriness)
+--- Support for coloring bluetooth, alarm, ringer vibrate, headset icons
+- Navigation Bar Tweaks:
+--- Reorganized menu
+--- Options for navigation bar colors (key color, glow color, navbar background color)
+- Lockscreen:
+--- Option for disabling lockscreen shade (removes dark tint from lockscreen)
+--- Hide statusbar clock support added for common 3rd party widgets (Chronus, DashClock, DeskClock)
+- Pie: improved sensitivity by being less strict about swiping direction
+- Improved detection of existing battery percent text (fixes double percent on some devices)
+- Improved determination of Circle Battery size (fixes circle being too small on some devices)
+- Increased Circle Battery left margin
+- Application launcher: run app immediately when it's the one and only app in the list
+- Updated Master Key Vulnerabilities patch (thanks to bgcngm and tungstwenty)
+- GravityBox Settings improvements:
+--- Enabled color hex value editor for all color pickers
+--- Added fine-tuning up/down buttons for sliders
+- Added Greek translations (thanks to vagosofron)
+- Updated French translation (thanks to ch-vox)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Italian translations (thanks to pitone02)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Portuguese (BR) translation (thanks to bgcngm)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.6.9 - 03/11/2013
+--------------------------------------
+- Fixed battery percent text issue introduced in v2.6.8
+
+Changelog 2.6.8 - 02/11/2013
+--------------------------------------
+- Fixed SystemUI crash when changing Pie properties while Pie is not active
+- Fixed glitch (buttons disappearing) in navigation bar introduced by app launcher key
+- Fixed volume panel expansion on Xperia devices (thanks to MohammadAG)
+- Improved navigation bar app launcher key layout for non-AOSP devices (Xperia)
+- Added option to make the panel fully expand to take up all the wasted space (thanks to MohammadAG)
+- Improved and simplified battery style tweaks (potentially eliminates phantom circle battery/percentage on some ROMs)
+- QuickSettings tiles: improved tiles layout for Android 4.3 (thanks daniil1410 for testing)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Italian translations (thanks to pitone02)
+- Updated French translation (thanks to ch-vox)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+
+Changelog 2.6.7 - 31/10/2013
+--------------------------------------
+- Fixed SystemUI crash on tablet devices
+- Improved navigation bar app key layout injection
+--- fixes navbar keys layout on Xperia and other non-AOSP devices
+--- navbar layout is modified only in case app key is enabled
+- Fixed app launcher not launching some apps correctly (e.g. RootExplorer)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Portuguese (BR) translation (thanks to bgcngm)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Ukrainian translations (thanks to egor4yk90) 
+
+Changelog 2.6.6 - 29/10/2013
+--------------------------------------
+- Introducing Application Launcher
+--- special dialog that allows defining and launching of as many as 8 apps
+--- supports several ways of activation:
+------ via dedicated navigation bar key (Navigation bar tweaks / Show app launcher key)
+------ by mapping to hardware/virtual key (Hardware Key Actions)
+------ from Pie (Statusbar tweaks / Pie controls / Show custom key)
+- Hardware key actions:
+--- New action to show Application Launcher
+- Pie controls:
+--- Custom key that can have either Search or Application launcher function
+--- Added support for disabling also recents key and app launcher key when Pie active
+--- Option to disable navigation keys will disable them only in case Pie is REALLY active
+--- Pie colors: options for setting custom colors to all the pie elements
+- Phone tweaks
+--- Option to set custom image for unknown caller
+- Implemented recovery from blank screen situation caused by minimum brightness set too low
+--- When screen can't be lit up, holding Volume+ for 7 seconds will reset brightness to manual mode with level set to 100 (device must be awaken, e.g. by power key first)
+--- Warning dialog will pop-up every time new value is set below 20
+- Fixed crash in Ongoing notifications blocker (when notification icon can't be obtained)
+- Updated French translation (thanks to ch-vox)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Portuguese (BR) translation (thanks to bgcngm)
+- Updated German translations (thanks to samsonbear)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.6.5 - 26/10/2013
+--------------------------------------
+- Hardware Key Actions menu rearranged (thanks to bgcngm)
+- Option to disable Home double-tap on Android 4.3+
+- Option to set signal icon coloring mode
+--- Mode 1: Use GravityBox Icons (colored, with signal level support)
+--- Mode 2: Use stock icons (colored, without signal level support)
+--- Mode 3: Do not apply color (not colored - leaves stock icons intact)
+- Prevent soft reboots on Motorola devices occurring when using screenshot related GB functions
+- Prevent System UI crashes on some Xperia devices
+- Improved compatibility with Xperia devices (thanks to MohammadAG)
+--- fixed mobile data toggling
+--- prevent errors in VolumePanel mod caused by incompatibility
+- Lockscreen Battery Arc positioning issues fixed
+- Avoid using Settings.System storage for storing some GB related data
+--- This means GB now fully supports resetting all the settings upon clearing GB app data or uninstalling
+- Added MT8377 to the list of supported MTK devices (thanks to bgcngm)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Portuguese (BR) translation (thanks to bgcngm)
+- Updated Spanish translation (thanks to bgcngm)
+- Updated French translation (thanks to ch-vox)
+- Updated German translations (thanks to samsonbear)
+- Updated Czech translations (thanks to mp3comanche)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Japanese translations (thanks to WedyDQ10)
+
+Changelog 2.6.4 - 22/10/2013
+--------------------------------------
+- Lockscreen tweaks:
+--- Lockscreen battery arc: shows battery status as an arc drawn around unlock ring handle (Android 4.2+ only)
+- Hardware Key Actions:
+--- added long-press support for Navigation Bar Home key (now supports Hardware Key Actions)
+--- action for toggling Torch on/off
+--- option for toggling Torch on Home HW key long-press while on lockscreen
+--- torch related actions available only for devices with Flash LED support (thanks to @bgcngm)
+- Call Vibrations: prevent unexpected vibrations from occurring on some devices (hopefully)
+- Data monitor: option to set position on the right regardless of clock position
+- Expandable volume panel: option to show panel expanded automatically
+- Added more tolerance to foreign Circle Battery Views
+--- preserves Circle Battery View with circle_battery ID introduced by particular ROM
+--- avoids breaking circle_battery View dependencies that can cause SystemUI crashes
+- Added Arabic translations (thanks to asmb111)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated French translation (thanks to ch-vox)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.6.3 - 17/10/2013
+--------------------------------------
+- Recent tasks RAM bar
+--- the latest implementation ported from AOKP project
+--- allows position at top or at bottom
+--- scales automatically according to "Clear all recents" button position/visibility
+- Hardware Key Actions:
+--- option for overriding single-tap action of Recent Tasks key (hardware and virtual)
+--- option for overriding long-press action of Recent Tasks key (hardware and virtual)
+- Minimum brightness limit lowered to 5
+- New app icon (designed by C3C076 A.K.A. Tha Graphics Lama)
+- Colors of GB tile icon and Screenshot tile icon adjusted to match other tiles
+- Other minor bug fixes and optimizations
+- Updated Polish translations (thanks to xtrem007)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated German translations (thanks to samsonbear)
+- Updated French translation (thanks to ch-vox)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Japanese translations (thanks to WedyDQ10)
+
+Changelog 2.6.2 - 13/10/2013
+--------------------------------------
+- Preferences adjusted to take device features into account (thanks to @bgcngm)
+--- Torch tile available only for devices having flash led
+--- GPS tile available only for devices having GPS
+--- Removed redundant "Disable GPS notifications" option (now available via notifications blocker)
+--- Removed preferences and tiles related to mobile data for WiFi only devices
+- Transparency manager: automatically disable transparency updates when all 4 transparency sliders set to 0
+--- fixes graphical anomaly appearing at the top of the windows when transparency off (all 4 sliders zero)
+- Prevent soft reboots on Touchwiz devices when accessing power menu (DOES NOT mean GB is now fully compatible with TW!!!)
+- Improved compatibility of status bar tweaks with devices having modified statusbar layout (Xperia,...)
+- Updated French translation (thanks to ch-vox)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Hungarian translations (thanks to benjoe1)
+
+Changelog 2.6.1 - 12/10/2013
+--------------------------------------
+- Ongoing notifications blocker:
+--- fixed compatibility with Android 4.3
+--- show hint when list is empty
+- Expandable volume panel:
+--- show ringer volume only for devices having voice feature
+--- don't allow volume linking for devices that don't have voice feature
+--- added alarm slider
+- Fixed SystemUI crash caused by WiFi tile on some MT6589 devices with different signal cluster handling
+- Updated French translation (thanks to ch-vox)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Chinese (Simplified) translations (thanks to liveasx)
+- Updated Italian translations (thanks to pitone02)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)\
+- Updated German translations (thanks to samsonbear)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Japanese translations (thanks to WedyDQ10)
+
+Changelog 2.6.0 - 10/10/2013
+--------------------------------------
+- Statusbar tweaks:
+--- Ongoing notification blocker - dynamically collects info on ongoing notifications and allows to block them
+--- Alternate WiFi Tile for MTK devices (CM Style) with signal and SSID indication
+--- AOSP Signal Tile: added indicator for mobile data off state when tile behaviour overriden (non-MTK, needs testing)
+--- Clock Day of Week revamped to support normal/lowercase/uppercase styles
+--- Data traffic monitor - monitors data traffic and displays info in statusbar
+--- Added Low Profile support for Circle battery, percent text and data traffic monitor
+- Lockscreen tweaks
+--- Quick unlock: unlocks immediately after correct PIN/password is entered without pressing ENTER
+--- Statusbar lock policy: allows making statusbar expandable on lockscreen
+--- Option for disabling limit for number of widgets
+--- Long-press on lock icon unlocks device when widgets maximized
+- Fixed 45 sec. vibrations not being executed on some devices (partial wakelock required during call)
+- Added Vietnamese translations (thanks to hdbk1986)
+- Added Turkish translations (thanks to AndroidMeda)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Chinese (Simplified) translations (thanks to liveasx, EraserKing)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+- Updated German translations (thanks to samsonbear)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Italian translations (thanks to pitone02)
+- Updated French translation (thanks to ch-vox)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Hungarian translations (thanks to benjoe1)
+
+Changelog 2.5.7 - 03/10/2013
+--------------------------------------
+- QuickSettings Tile Reordering
+- GravityBox Tile: long-touch serves as a quick shortcut to Tile Reordering interface
+- Fixed Battery Stats crashing on some devices (MTK Specific)
+--- stock Battery Percent Checkbox (the one in Battery Stats) is back
+--- has priority over GB percent text option (when enabled in Battery Stats, the one in GB will be disabled)
+- Updated German translations (thanks to samsonbear)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated French translation (thanks to ch-vox)
+- Updated Italian translations (thanks to pitone02)
+- Updated Japanese translations (thanks to WedyDQ10)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+
+Changelog 2.5.6 - 01/10/2013
+--------------------------------------
+- Fixed compatibility issues in Network mode tile and Messaging tweaks for single SIM MTKs (thanks to bgcngm)
+- GB preferences adjusted to follow device capabilities/features (thanks to bgcngm)
+- Fixed GPS Tile long-touch misbehavior
+- Fixed infinite MMS/SMS switching loop when unicode stripping is on and SMS is about to become MMS due to its length
+- Fixed status bar brightness control for Android 4.1
+- Added options for Call vibrations
+--- on call connected
+--- on call disconnected
+--- on call waiting
+--- every 45th second during outgoing call
+- Sleep Tile: show power menu on long-touch
+- Option for controlling screen on during plug/unplug of power/usb
+- Option for muting volume adjust sound
+- Added MT6572 to the list of MTK devices
+- Added Japanese translations (thanks to WedyDQ10)
+- Added Dutch (NL) translations (thanks to spacecaker)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Polish translations (thanks to xtrem007)
+- Updated French translation (thanks to ch-vox)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Italian translations (thanks to pitone02)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.5.5 - 28/09/2013
+--------------------------------------
+- QuickSettings tweaks
+--- Option for overriding default touch/long-touch behaviour of tiles (non-MTK)
+--- GPS and Ringer Mode tile previously made for non-MTK now available also for MTK
+------ can be used as alternatives for standard MTK GPS Tile and Audio Profiles Tile
+--- Network mode tile mode
+------ added 2G/3G mode option
+------ added (LTE) to mode descriptions for better understanding how modes are switched
+------ option to choose SIM Slot to which tile applies (for MTK Dual Sims)
+--------- tile can now be used also for SIM Slot 2
+--- Fixed improper indication of position fix in alternative GPS tile
+--- Wifi tile now active also while airplane mode is on (MTK)
+- Intelligent Pie Controls
+--- linked to Expanded Desktop - 4 modes available
+--- disabled: Pie completely disabled
+--- always on: Pie always on independently of Expanded Desktop
+--- when expanded desktop on: activates when expanded desktop is on
+--- when expanded desktop hides navbar: Expanded Desktop mode is set to mode that hides navbar
+- Navigation bar tweaks
+--- Moved navbar transparency settings under Navbar tweaks section
+--- Option for navbar height for landscape orientation
+- Statusbar icon coloring: option to leave stock battery icon intact
+--- When enabled, icon coloring won't be applied to stock battery icon. 
+    Useful in case stock battery icon was replaced with 3rd party battery mod
+- Lockscreen targets
+--- category renamed to "Unlock ring settings" (thanks to bgcngm)
+--- options to set unlock ring horizontal/vertical offset (thanks to bgcngm)
+--- these changes required reset of your current Lockscreen targets settings
+- Option for stripping unicode in messaging now supports quick message dialog (MTK)
+- Transparency sliders now accept 1% steps
+- Quiet down a lot of logging: only device info at startup + runtime errors are logged
+- Updated Indonesian translations (thanks to awaaas)
+- Updated German translations (thanks to peterhugelberg)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Italian translations (thanks to pitone02)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated French translation (thanks to ch-vox)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.5.1 - 24/09/2013
+--------------------------------------
+- Lockscreen Targets: 
+--- fixed crash when accessibility services enabled
+--- app names added into accessibility descriptions (e.g. they will be spoken when using TalkBack)
+- Other minor optimizations
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+
+Changelog 2.5.0 - 24/09/2013
+--------------------------------------
+- Lockscreen targets:
+--- ability to add as many as 5 lockscreen targets for launching apps
+--- replaces all original targets apart from the unlocking one when enabled
+--- option to adjust bottom margin of unlock ring
+--- known issue: stock browser might not be launched properly from lockscreen
+--- available for Android 4.2+ only
+- Statusbar tweaks:
+--- Statusbar brightness control:
+------ continuous brightness adjustment by sliding over statusbar
+------ immediate brighntess adjustment by long-touching statusbar
+------ applies to manual brightness (autobrightness must be off)
+------ works also on lockscreen
+--- option for statusbar element colors to follow stock battery color (more info: http://tinyurl.com/qzbecat)
+--- option to disable GPS notifications
+- QuickSettings Tiles:
+--- NetworkMode tile: allow LTE phones to switch 2G/2G+3G/3G/LTE (for LTE, it uses device specific default LTE mode. Typically LTE_GSM_WCDMA)
+--- option to set mode of network mode tile (2G/2G+3G/3G vs. 2G/2G+3G. For LTE: 2G/2G+3G/3G/LTE vs. 2G/2G+3G/LTE)
+--- Stay Awake Tile (prevents the screen from turning off when enabled)
+--- Screenshot Tile
+--- improved GPS tile for non-MTK devices (better icon + indication of position fix)
+--- improved Ringer Mode Tile to take into account whether device has vibrator (non-MTK)
+- Phone tweaks:
+--- option for stripping unicode characters from message before sending (for stock messaging app)
+--- option to disable slow mobile data warning for SIM in 2G mode (for MTK Dual Sims - mobile data tile)
+- Display tweaks:
+--- option to allow all display rotations (e.g. upside down)
+- Other improvements:
+--- improved volume keys skip track for better support of 3rd party players (thanks to bparker98)
+--- power menu dialog optimizations
+--- button backlight notifications: make buttons lit for a bit longer
+--- fixed scaling of Back button in navigation bar
+- Updated French translations (thanks to ch-vox)
+- Updated German translations (thanks to Wikiwix)
+- Updated Chinese (Traditional) translations (thanks to Eric850130)
+- Updated Portuguese (PT) translation (thanks to bgcngm)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.4.2 - 20/09/2013
+--------------------------------------
+- Yet another fix for Samsung's expandable volume panel
+- StatusbarIconManager: improved handling of default system colors (when icon coloring is disabled)
+- Updated French translations (thanks to ch-vox)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Italian translations (thanks to pitone02)
+
+Changelog 2.4.1 - 19/09/2013
+--------------------------------------
+- Fixed expandable volume panel option for S4 GE devices
+- Disabled more music volume steps option for S4 GE devices
+- Screenshot in power menu is now optional
+- Expanded desktop: better names for system settings variables
+  to avoid potential conflicts
+- Minor Button Backlight options improvements
+- Updated French translations (thanks to ch-vox)
+- Updated German translations (thanks to Wikiwix)
+- Updated Hungarian translations (thanks to benjoe1)
+- Updated Polish translations (thanks to xtrem007)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+
+Changelog 2.4.0 - 17/09/2013
+--------------------------------------
+- Expanded desktop:
+--- 4 modes: disabled, hide statusbar, hide navigation bar, hide both
+--- Power menu action for expanded desktop toggling
+--- QuickSettings tile for expanded desktop toggling
+--- hardware key action for expanded desktop toggling
+- Battery styles: improved compatibility with custom ROMs and 3rd party battery mods
+- Fixed blank display issue for Android 4.1 devices
+- Option to link notification panel clock to any app (specified by user)
+- Additional custom app for hardware key actions
+- Added Screenshot action to power menu
+- Hardware key actions:
+--- action for invoking menu (mimics menu key)
+--- action for toggling expanded desktop
+--- action for launching additional app
+- Navigation bar tweaks
+--- Enable/disable navigation bar
+--- Option to set navbar height (for portrait mode)
+--- Option to set navbar width (for landscape mode)
+--- Option to always show menu key
+- Potential fix of Expandable Volume Panel for S4 GE devices (needs testing)
+- Updated French translations (thanks to ch-vox)
+- Updated Russian translations (thanks to smb.roman AKA romashko)
+- Updated Indonesian translations (thanks to awaaas)
+- Updated Chinese translations (thanks to jwchen119)
+
+Changelog 2.3.1 - 10/09/2013
+--------------------------------------
+- improved AppPickerPreference to support larger number of installed apps (thanks sag999 for testing)
+- fixed potential crash in Battery status settings
+- updated French translations (thanks to ch-vox)
+- updated Indonesian translations (thanks to awaaas)
+- updated Polish translations (thanks to xtrem007)
+- updated Russian translations (thanks to romashko)
+- updated Chinese (Traditional) translations (thanks to jwchen119)
+- updated Hungarian translations (thanks to benjoe1)
+- updated Italian translations (thanks to pitone02)
+
+Changelog 2.3.0 - 08/09/2013
+--------------------------------------
+- adapted to support Android 4.1
+- added support for MT6577
+- updated Xposed Bridge API to 30 (module now requires the latest Xposed Framework 2.2)
+- Hardware key actions extended
+--- added support for long-press on Home
+--- new action: Show recent apps
+--- new action: Launch custom app
+- option to link notification panel clock to DeskClock app instead of Date&Time settings
+- added QuickSettings Volume tile
+- option for National data roaming (MVNO)
+- improved detection of device type (phone or tablet) (thanks to bgcngm)
+- preferences adjusted according to device type (thanks to bgcngm)
+- removed Gemini specific preferences for non-Gemini MTK devices (thanks to bgcngm)
+- optimized Application Picker preference
+--- on-demand loading and caching of app icons
+--- more friendly in case of large number of apps installed
+- implemented check if module is active at GB settings start-up
+- added Indonesian translations (thanks to awaaas)
+- updated German translations (QuickSettings) (thanks to Napzter)
+- updated French translations (thanks to ch-vox)
+- updated Hungarian translations (thanks to benjoe1)
+- updated Spanish translations (thanks to klander)
+- updated Polish translations (thanks to xtrem007)
+
+Changelog 2.2.2 - 02/09/2013
+--------------------------------------
+- removed phone specific preferences on tablet devices (thanks to bgcngm)
+- reboot strings updated for tablets (thanks to bgcngm)
+- removed preferences not needed for ZTE V987 (thanks to bgcngm)
+- fixed statusbar colors for non-Gemini devices (thanks to bgcngm)
+- added option to reboot to bootloader for non-MTK devices (thanks to bgcngm)
+- improved clock hiding option to obey lockscreen clock widget policy (hides clock when lockscreen clock widget is present)
+- fixed AM/PM hiding option
+- added AM/PM hiding support also for notification panel clock
+- implemented brightness settings master switch
+--- allows devices not using standard Android brightness support to completely disable brightness tweaks to avoid
+    issues like blank screen, etc.
+- other small compatibility fixes
+- updated Russian translations (thanks to romashko)
+- updated Polish translations (thanks to xtrem007)
+- updated Hungarian translations (thanks to benjoe1)
+
+Changelog 2.2.1 - 20/08/2013
+--------------------------------------
+- fixed issues introduced in 2.2.0 affecting non-MTK devices
+- updated Italian translations (thanks to pitone02)
+- added German translations - not complete yet (thanks to Napzter)
+
+Changelog 2.2.0 - 20/08/2013
+--------------------------------------
+- Added QuickSettings QuickApp tile:
+--- option to set main application to be launched on touch
+--- option to set another 4 apps to be launched from dialog displayed on long-touch
+- Added QuickSettings GPS on/off tile (for non-MTK devices)
+- Added QuickSettings Ringer Mode tile (for non-MTK devices)
+- Pie controls:
+--- option to always show menu button
+--- option to set trigger size
+- Clock settings
+--- option to completely turn off am/pm
+--- option to hide alarm icon
+--- option to hide clock
+- Transparency management. Allows to:
+--- set transparency for status bar for launcher and lockscreen independently
+--- set transparency for navigation bar for launcher and lockscreen independently
+--- uses default system transparency when not in lockscreen nor launcher
+- Hide clear all recents button when there are no recent tasks
+- Improved button backlight notifications
+--- makes button backlight blink
+--- now also works for missed calls
+--- requires partial wakelock which is held for max. 1 hour (may consume battery)
+- Option to set screen dim level
+- Use sliders for minimum brihtness and screen dim level settings
+- Improved compatibility with MTK devices that have no Gemini support (thanks to bgcngm)
+- updated French translations (thanks to ch-vox)
+- updated Italian translations (thanks to pitone02)
+- updated Slovak and Czech translations
+
+Changelog 2.1.1 - 15/08/2013
+--------------------------------------
+- fixed Pie compatibility issues for Android 4.3
+- added support for MTK8389 (thanks to bgcngm)
+- option to disable warnings when sending messages or making phone calls while roaming (MTK only) (thanks to ludoo for testing)
+- allow minimum brightness as low as 10 (use with caution)
+- clear all recents: preserve existing clear all button if it exists (e.g. if implemented by custom rom)
+- updated French translations (thanks to ch-vox)
+
+Changelog 2.1.0 - 13/08/2013
+--------------------------------------
+- CyanogenMod Pie Controls featuring:
+--- pie can be dragged and snapped to any screen border
+--- allows up to 4 independent pies, for each screen border
+--- option to show/hide search button
+--- option to set pie size (navigation key size)
+--- option to hide navigation bar while pie is on (for devices having navigation bar)
+--- option to disable HW keys (menu,back,home) while pie is on. HW key long-press and double-tap actions
+    will still work (for devices having HW keys)
+--- additional MENU pie key is available while HW keys are disabled
+- Button backlight modes (in Display tweaks)
+--- standard mode (default)
+--- disable button backlight
+--- keep button backlight on while screen is on
+- Button backlight notifications (experimental)
+--- lights up button backlight when there's a notification and screen is turned off (for devices that lack notification LED)
+- Dithered Holo background is now optional
+- Improved existing reboot menu detection algorithm
+- Option to use dark theme for GravityBox UI (in About menu)
+- Clear all recents revamped
+--- option to set position of clear all recents button (any screen corner)
+--- option to adjust top margin of clear all recents button (e.g. when covered by statusbar)
+- updated Slovak, Czech, French (thanks to ch-vox & Matx13) translations
+
+Changelog 2.0.1 - 09/08/2013
+--------------------------------------
+- fixed option for disabling roaming indicators (MTK devices)
+- fixed AM/PM showing only when Day of week enabled on some devices
+- improved scaling of "clear all recents" button
+- allow overlay/underlay modes also for notification drawer custom images
+- yet another attempt to fix 2G/3G tile for LTE network
+- updated French translations (thanks to ch-vox)
+
+Changelog 2.0.0 - 08/08/2013
+--------------------------------------
+- added support for non-MTK devices running vanilla Android
+- compatibility adjustments to support non-MTK devices and Android 4.3
+- smaller font for day of week and AM/PM in statusbar clock
+- added AM/PM indicator for ROMs where missing while 12h format is set
+- option to set Notification drawer style
+--- default background
+--- color fill with 2 modes: overlay/underlay
+--- independent custom images for portrait and landscape
+--- background transparency level
+- NetworkModeTile: added support for LTE network type to switch between LTE and GSM_ONLY (needs testing)
+- option to show circle battery without percentage
+- option to disable Roaming indicators (MTK6589 only)
+- other compatibility fixes
+
+Changelog 1.8.5 - 01/08/2013
+--------------------------------------
+- fixed status bar background color not being applied at boot on some devices
+- expandable volume panel - make ringer slider always available (e.g. also when music plays)
+- option to set statusbar icon color and data activity indicators color
+--- applies to all icons except for bluetooth and airplane mode icon
+--- stock battery icon won't animate during charging when coloring is turned on
+--- for mobile signal, the basic blue color is overriden. Other 3 colors in SIM Management can be used to override GB color
+- reorganized statusbar preferences
+- optimized resource handling
+- updated Slovak, Czech, French, Russian translations
+
+Changelog 1.8.0 - 28/07/2013
+--------------------------------------
+- Media tweaks
+--- option for expandable volume panel
+--- option to unlink common volumes for ringtone and notifications to control them independently
+- Quick settings
+--- auto-switch to QuickSettings when there are no notifications is now configurable
+--- option to use edges of status bar to quickly pull down QuickSettings (off,left,right)
+- Hardware keys
+--- option to disable volume rocker wake for devices like Jiayu G3S, G4, where volume keys turn on screen
+--- this should also fix volume keys skip track for those devices
+- Messaging wakelock fix
+--- adapted to support more devices (Zopo, Jiayu G3s, G4)
+
+Changelog 1.7.1 - 25/07/2013
+--------------------------------------
+- improved detection of existing Reboot action item.
+--- Fixes duplicate Reboot action item for most devices
+--- There may still be some exotic ones where duplicate may occur - provide framework-res.apk in such case
+- updated Traditional Chinese translations (thanks to c1126230)
+- updated Ukrainian translations (thanks to alex_glbr)
+
+Changelog 1.7.0 - 24/07/2013
+--------------------------------------
+- Advanced reboot menu revamped
+--- binds to existing Reboot item if exists
+--- creates new Reboot item if it does not exist
+--- added Soft Reboot option
+- Display Tweaks
+--- dithered Holo background to suppress color banding
+--- option to use solid black Holo background instead of black-grey gradient
+- Hardware key actions
+--- added "Go to sleep" action (mimics power key)
+- QuickSettings tiles
+--- added Sleep tile (mimics power key)
+--- added QuickRecord tile - allows to quickly record audio
+------ long-press to start recording
+------ single-press to stop recording or start/stop playback
+--- option to set number of tiles per row for portrait mode (3,4,5)
+- Developer options
+--- added 0.25x scale factor for animations
+- Battery style revamped
+--- allows battery percent text to be turned on for any battery style (independent option)
+--- removed obsolete Battery percent setting from Battery settings
+- added Traditional Chinese translations (thanks to c1126230)
+
+Changelog 1.6.1 - 19/07/2013
+--------------------------------------
+Security release, patching following vulnerabilities:
+- Master Key (Bug 8219321) - http://bluebox.com/corporate-blog/bluebox-uncovers-android-master-key/
+- Bug 9695860 - http://www.androidpolice.com/2013/07/11/second-all-access-apk-exploit-is-revealed-just-two-days-after-master-key-goes-public-already-patched-by-google/
+Thanks to Tungstwenty@XDA for original xposed module
+https://github.com/Tungstwenty/MasterKeyDualFix
+
+Changelog 1.6.0 - 18/07/2013
+--------------------------------------
+- Hardware key actions
+--- on Menu long-press
+--- on Menu double-tap
+--- on Back long-press
+--- available actions: search, voice search, switch to previous app, kill foreground app
+- Phone tweaks
+--- flip action while ringing (do nothing, mute ringer, dismiss call)
+--- disable vibrate on call connect
+- fixed CRT screen off animation not working on some ROMs
+- updated translations: Slovak, Czech, Danish, French, Russian
+
+Changelog 1.5.1 - 15/07/2013
+--------------------------------------
+- updated Danish translations (thx Mr.Premise)
+- updated French translations (thx ch-vox)
+- added Ukrainian translations (thx alex_glbr)
+
+Changelog 1.5.0 - 08/07/2013
+--------------------------------------
+- Lockscreen tweaks
+--- option to enable lockscreen rotation
+--- option to enable quick-unlock by menu key on lockscreen
+- Statusbar tweaks
+--- option to center statusbar clock
+- Power tweaks
+--- option to disable LED while charging
+- Display tweaks
+--- option to set minimum brightness level for manual brightness setting
+--- interface for adjusting autobrightness levels
+- Media tweaks
+--- option to add more volume levels for music stream
+--- option to control safe headset media volume feature
+- General fixes
+--- fix wakelock in messaging app causing screen turn on every time new message arrives
+- Added Polish translations (thanks to LuHash)
+- Added Portuguese (PT) translations (thanks to bgcngm)
+
+Changelog 1.4.1 - 27/06/2013
+--------------------------------------
+- updated Italian translations (thanks to kidmar)
+- updated Russian translations (thanks to romashko)
+- updated Danish translations (thanks to Mr. Premise)
+- updated Spanish translations (thanks to oicirbaf)
+- updated Hungarian translations (thanks to Indiant)
+- updated French translations (thanks to ch-vox)
+- added Portuguese (BR) translations (thanks to lelemm) 
+
+Changelog 1.4.0 - 25/06/2013
+--------------------------------------
+- Bugfix: don't switch to QuickSettings when SIM Switch Panel is showing
+- Lockscreen tweaks:
+--- option to set lockscreen background style (default, color fill, custom image)
+--- option to show lockscreen widgets maximized by default
+- option to disable LED flashing when battery is low
+- updated Hungarian translations (thanks to Indiant)
+
+Changelog 1.3.2 - 21/06/2013
+--------------------------------------
+- Fixed bug: two-finger swipe won't open QuickSettings when there are notifications
+
+Changelog 1.3.1 - 20/06/2013
+--------------------------------------
+- SystemUI: avoid "phantom" statusbar collapsing
+--- more info: https://github.com/C3C0/GravityBox/commit/4a2f875814ed344bf692cfcfc1df4c6d7f9ad3d3
+- Open QuickSettings instead of empty notification panel when there are no notifications
+- updated Danish translations (thanks to Mr. Premise)
+- updated French translations (thanks to ch-vox)
+- updated Spanish translations (thanks to peptonib)
+- updated Italian translations (thanks to kidmar)
+
+Changelog 1.3.0 - 20/06/2013
+--------------------------------------
+- QuickSettings Torch tile (flashlight)
+- QuickSettings Network mode tile (2G/3G/2G+3G switch)
+- new battery style: Large percent text with stock icon
+- option for CRT screen off animation
+- added shortcut for launching Engineering mode
+- added shortcut for launching Dual Sim Ringer settings
+--- allows setting ringtone and notification sounds separately for each SIM
+--- requires 3rd party Dual Sim Ringer app for this option to be visible
+- updated translations 
+
+Changelog 1.2.0 - 16/06/2013
+--------------------------------------
+- option to set statusbar color and transparency 
+--- thanks to Sergey Margaritov for ColorPickerPreference
+- option to unlock Voice search and TTS settings in Language&Input
+- option to unlock advanced developer options
+- revamped preference screen
+- added About section with links to relevant threads
+- fixed bug in QuickSettings that caused dynamic tiles to become invisible
+- added reboot confirmation dialogs
+- added Hungarian translations (thanks to Indiant)
+
+Changelog 1.1.0 - 14/06/2013
+--------------------------------------
+- status bar quick settings management
+--- allows to show/hide quicksettings tiles
+--- added Sync on/off tile
+--- added WiFi AP (hotspot) on/off tile (long-touch opens Tether settings)
+--- added GravityBox tile (opens GravityBox app)
+- added Danish translations (thanks to Mr. Premise)
+- added Czech tranalstions (thanks to unavix)
+- added French translations (thanks to ch-vox)
+- added Russian translations (thanks to romashko)
+- added Spanish translations (thanks to peptonib)
+- added Catalan translations (thanks to peptonib)
+- updated Italian translations (thanks to kidmar)
+- updated Slovak translations
